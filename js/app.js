@@ -95,7 +95,7 @@ function initAPICheckboxes() {
     });
     
     // 仅在隐藏设置为false时添加成人API组
-    if (!HIDE_BUILTIN_ADULT_APIS) {
+    if (true) {
         // 添加成人API组标题
         const adultTitle = document.createElement('div');
         adultTitle.className = 'api-group-title adult';
@@ -999,8 +999,8 @@ function toggleEpisodeOrder(sourceCode) {
 }
 
 // app.js 或路由文件中
-const config = require('./config');
 const authMiddleware = require('./middleware/auth');
+const config = require('./config');
 
 // 对所有请求启用鉴权（按需调整作用范围）
 if (config.auth.enabled) {
