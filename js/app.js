@@ -111,13 +111,9 @@ function initAPICheckboxes() {
 // 添加成人API列表
 function addAdultAPI() {
     // 仅在隐藏设置为false时添加成人API组
-<<<<<<< HEAD
-    if (true) {
-=======
     if (!HIDE_BUILTIN_ADULT_APIS && (localStorage.getItem('yellowFilterEnabled') === 'false')) {
         const container = document.getElementById('apiCheckboxes');
 
->>>>>>> upstream/main
         // 添加成人API组标题
         const adultdiv = document.createElement('div');
         adultdiv.id = 'adultdiv';
